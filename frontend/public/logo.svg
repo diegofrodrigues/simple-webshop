@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="3000"
+   height="3000"
+   viewBox="0 0 3000 3000"
+   version="1.1"
+   id="svg285"
+   sodipodi:docname="simple_webshop_logo.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview287"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="0.13366667"
+     inkscape:cx="3321.6958"
+     inkscape:cy="2027.4314"
+     inkscape:window-width="2560"
+     inkscape:window-height="1011"
+     inkscape:window-x="1920"
+     inkscape:window-y="1112"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg285" />
+  <defs
+     id="defs213">
+    <radialGradient
+       id="radial-pattern-0"
+       gradientUnits="userSpaceOnUse"
+       cx="0"
+       cy="0"
+       fx="0"
+       fy="0"
+       r="1500"
+       gradientTransform="translate(1683.9505,1407.2548)">
+      <stop
+         offset="0"
+         stop-color="rgb(99.839783%, 99.839783%, 99.839783%)"
+         stop-opacity="1"
+         id="stop172" />
+      <stop
+         offset="0.0625"
+         stop-color="rgb(99.531555%, 99.531555%, 99.531555%)"
+         stop-opacity="1"
+         id="stop174" />
+      <stop
+         offset="0.121094"
+         stop-color="rgb(99.241638%, 99.241638%, 99.241638%)"
+         stop-opacity="1"
+         id="stop176" />
+      <stop
+         offset="0.175781"
+         stop-color="rgb(98.973083%, 98.973083%, 98.973083%)"
+         stop-opacity="1"
+         id="stop178" />
+      <stop
+         offset="0.226562"
+         stop-color="rgb(98.724365%, 98.724365%, 98.724365%)"
+         stop-opacity="1"
+         id="stop180" />
+      <stop
+         offset="0.273438"
+         stop-color="rgb(98.495483%, 98.495483%, 98.495483%)"
+         stop-opacity="1"
+         id="stop182" />
+      <stop
+         offset="0.316406"
+         stop-color="rgb(98.286438%, 98.286438%, 98.286438%)"
+         stop-opacity="1"
+         id="stop184" />
+      <stop
+         offset="0.355469"
+         stop-color="rgb(98.086548%, 98.086548%, 98.086548%)"
+         stop-opacity="1"
+         id="stop186" />
+      <stop
+         offset="0.394531"
+         stop-color="rgb(97.798157%, 97.798157%, 97.798157%)"
+         stop-opacity="1"
+         id="stop188" />
+      <stop
+         offset="0.46875"
+         stop-color="rgb(97.439575%, 97.439575%, 97.439575%)"
+         stop-opacity="1"
+         id="stop190" />
+      <stop
+         offset="0.535156"
+         stop-color="rgb(97.131348%, 97.131348%, 97.131348%)"
+         stop-opacity="1"
+         id="stop192" />
+      <stop
+         offset="0.589844"
+         stop-color="rgb(96.862793%, 96.862793%, 96.862793%)"
+         stop-opacity="1"
+         id="stop194" />
+      <stop
+         offset="0.640625"
+         stop-color="rgb(96.62323%, 96.62323%, 96.62323%)"
+         stop-opacity="1"
+         id="stop196" />
+      <stop
+         offset="0.683594"
+         stop-color="rgb(96.414185%, 96.414185%, 96.414185%)"
+         stop-opacity="1"
+         id="stop198" />
+      <stop
+         offset="0.722656"
+         stop-color="rgb(96.14563%, 96.14563%, 96.14563%)"
+         stop-opacity="1"
+         id="stop200" />
+      <stop
+         offset="0.789062"
+         stop-color="rgb(95.846558%, 95.846558%, 95.846558%)"
+         stop-opacity="1"
+         id="stop202" />
+      <stop
+         offset="0.839844"
+         stop-color="rgb(95.617676%, 95.617676%, 95.617676%)"
+         stop-opacity="1"
+         id="stop204" />
+      <stop
+         offset="0.878906"
+         stop-color="rgb(95.368958%, 95.368958%, 95.368958%)"
+         stop-opacity="1"
+         id="stop206" />
+      <stop
+         offset="0.9375"
+         stop-color="rgb(95.059204%, 95.059204%, 95.059204%)"
+         stop-opacity="1"
+         id="stop208" />
+      <stop
+         offset="1"
+         stop-color="rgb(94.900513%, 94.900513%, 94.900513%)"
+         stop-opacity="1"
+         id="stop210" />
+    </radialGradient>
+  </defs>
+  <g
+     id="g36325"
+     transform="matrix(4.2991962,0,0,4.2991962,-4012.0492,-3369.7269)"
+     inkscape:export-filename="/home/diego/Projects/simple-webshop/frontend/public/logo.svg"
+     inkscape:export-xdpi="300"
+     inkscape:export-ydpi="300">
+    <g
+       id="g36304">
+      <rect
+         style="fill:#666666;fill-opacity:1;stroke-width:0.710432"
+         id="rect31520"
+         width="373.95151"
+         height="86.952606"
+         x="1095.6617"
+         y="818.09167"
+         ry="16.944006" />
+      <g
+         id="g23726"
+         transform="matrix(0.61942857,0,0,0.61942857,522.07402,508.43005)">
+        <g
+           id="g5739"
+           transform="matrix(-1,0,0,1,2727.8474,-440.41398)">
+          <path
+             fill-rule="nonzero"
+             fill="#c20104"
+             fill-opacity="1"
+             d="m 1367.5703,1389.4688 c -0.6601,35.7421 -16.5508,63.3398 -46.8594,81.7695 -59.4296,36.1328 -137.5898,-2.7188 -145.25,-71.9766 -2.9414,-26.6015 -1.2109,-53.3828 -0.9921,-80.0625 0,-0.5195 0.031,-1.0508 0.062,-1.5703 h 193.7695 c -2.6602,23.6094 -0.2813,47.8906 -0.7305,71.8399"
+             id="path217" />
+          <path
+             fill-rule="nonzero"
+             fill="#fc0100"
+             fill-opacity="1"
+             d="m 1397.4492,1132.1016 c -10.1601,60.6484 -20.6406,121.2968 -28.7578,182.2382 -0.1406,1.1016 -0.2812,2.1915 -0.3906,3.2891 h -193.7695 c 0.6406,-9.4687 6.3281,-17.9883 9.7968,-26.8476 20.9102,-53.6524 42.2422,-107.1329 63.0235,-160.8399 2.4882,-6.4414 5.6367,-8.043 12.1093,-7.9297 21.4805,0.418 42.9883,0.168 64.4805,0.168 21.5,-0.01 43.0078,0.2891 64.4883,-0.168 7.9297,-0.1601 10.5508,0.9375 9.0195,10.0899"
+             id="path219" />
+          <path
+             fill-rule="nonzero"
+             fill="#c20104"
+             fill-opacity="1"
+             d="m 1138.7695,1327.6914 c 0.2891,19.8594 0.1914,39.7383 0.1016,59.6172 -0.25,53.4531 -40.7422,95.9727 -92.9609,97.7227 -50.03911,1.6796 -95.55473,-39.9102 -99.59379,-91.1407 -1.64454,-20.8203 -0.75782,-41.6797 -0.5586,-62.5195 0.0312,-4.793 0.74219,-9.3516 2.03516,-13.7422 h 191.86723 c -0.6407,3.25 -0.9297,6.582 -0.8907,10.0625"
+             id="path221" />
+          <path
+             fill-rule="nonzero"
+             fill="#fc0100"
+             fill-opacity="1"
+             d="m 1219.7617,1131.7305 c -25.7226,58.3476 -51.0625,116.8593 -76.7226,175.2383 -1.5508,3.5312 -2.6797,7.0507 -3.3789,10.6601 H 947.79297 c 1.6875,-5.75 4.3789,-11.207 7.85937,-16.418 35.70313,-53.2695 71.51956,-106.4804 106.84766,-160.0117 9.0195,-13.6289 20.6211,-19.6679 36.8203,-19.1406 18.2305,0.6211 36.4805,0.1523 54.7305,0.1523 19.8711,0 39.75,0.4102 59.6094,-0.1796 9.1914,-0.2813 9.3593,2.289 6.1015,9.6992"
+             id="path223" />
+          <path
+             fill-rule="nonzero"
+             fill="#c20104"
+             fill-opacity="1"
+             d="m 1824.5391,1399.2617 c -7.6602,69.2578 -85.8203,108.1094 -145.25,71.9766 -30.3086,-18.4297 -46.1993,-46.0274 -46.8594,-81.7695 -0.4609,-23.9493 1.9297,-48.2188 -0.7305,-71.8399 h 193.7696 c 0.031,0.5195 0.062,1.0508 0.062,1.5703 0.2187,26.6797 1.9375,53.461 -0.9922,80.0625"
+             id="path225" />
+          <path
+             fill-rule="nonzero"
+             fill="#fc0100"
+             fill-opacity="1"
+             d="m 1825.4688,1317.6289 h -193.7696 c -0.1094,-1.0976 -0.25,-2.1875 -0.3906,-3.2891 -8.1172,-60.9414 -18.5977,-121.5898 -28.7578,-182.2382 -1.5391,-9.1524 1.0898,-10.25 9.0078,-10.0899 21.4922,0.4571 43,0.1602 64.5,0.168 21.4922,0 43,0.25 64.4805,-0.168 6.4726,-0.1133 9.6211,1.4883 12.1093,7.9297 20.7735,53.707 42.1016,107.1875 63.0235,160.8399 3.457,8.8593 9.1367,17.3789 9.7969,26.8476"
+             id="path227" />
+          <path
+             fill-rule="nonzero"
+             fill="#c20104"
+             fill-opacity="1"
+             d="m 1595.4883,1399.3711 c -4.0899,46.0781 -45.457,83.8203 -91.0391,85.6289 -1.4883,0.059 -2.9687,0.1016 -4.4609,0.1016 -1.4688,0 -2.9492,-0.043 -4.4375,-0.1016 -45.582,-1.8086 -86.9492,-39.5508 -91.0391,-85.6289 -2.4023,-27.1992 -2.7422,-54.4805 -1.0117,-81.7422 h 193 c 1.7305,27.2617 1.3906,54.543 -1.0117,81.7422"
+             id="path229" />
+          <path
+             fill-rule="nonzero"
+             fill="#fc0100"
+             fill-opacity="1"
+             d="m 1596.5,1317.6289 h -193 c 0.7109,-11.418 1.7891,-22.8476 3.2188,-34.2578 6.1328,-48.4609 11.5312,-97.0117 17.0703,-145.5195 1.8007,-15.6133 1.5507,-15.6524 16.6914,-15.6524 h 119.039 c 15.1407,0 14.8907,0.039 16.6797,15.6524 5.5391,48.5078 10.9414,97.0586 17.0821,145.5195 1.4296,11.4102 2.5078,22.8398 3.2187,34.2578"
+             id="path231" />
+          <path
+             fill-rule="nonzero"
+             fill="#c20104"
+             fill-opacity="1"
+             d="m 2053.6914,1393.8906 c -4.0625,51.2305 -49.5625,92.8203 -99.6016,91.1407 -52.2382,-1.75 -92.7109,-44.2696 -92.9609,-97.7227 -0.09,-19.8789 -0.1875,-39.7578 0.082,-59.6172 0.051,-3.4805 -0.2421,-6.8125 -0.8828,-10.0625 h 191.8828 c 1.2774,4.3906 1.9883,8.9492 2.0274,13.7422 0.2031,20.8398 1.0898,41.6992 -0.5469,62.5195"
+             id="path233" />
+          <path
+             fill-rule="nonzero"
+             fill="#fc0100"
+             fill-opacity="1"
+             d="m 2052.2109,1317.6289 h -191.8828 c -0.6992,-3.6094 -1.8164,-7.1289 -3.3672,-10.6601 -25.6601,-58.379 -51,-116.8907 -76.7226,-175.2383 -3.2695,-7.4102 -3.0977,-9.9805 6.0898,-9.6992 19.8711,0.5898 39.7422,0.1796 59.6211,0.1796 18.25,0 36.5,0.4688 54.7305,-0.1523 16.1992,-0.5273 27.8008,5.5117 36.8086,19.1406 35.3398,53.5313 71.1406,106.7422 106.8398,160.0117 3.5,5.211 6.1914,10.668 7.8828,16.418"
+             id="path235" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:287.112px;line-height:1.25;font-family:'Noto Sans Ol Chiki';-inkscape-font-specification:'Noto Sans Ol Chiki, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;fill-opacity:1;stroke:none;stroke-width:7.17779"
+           x="675.55988"
+           y="1297.4946"
+           id="text1581"
+           transform="scale(0.96699052,1.0341363)"><tspan
+             sodipodi:role="line"
+             id="tspan1579"
+             x="675.55988"
+             y="1297.4946"
+             style="fill:#666666;fill-opacity:1;stroke-width:7.17779">SIMPLE</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:66.8883px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.67221"
+         x="1113.2449"
+         y="885.91626"
+         id="text7641"><tspan
+           sodipodi:role="line"
+           id="tspan7639"
+           x="1113.2449"
+           y="885.91626"
+           style="fill:#ffffff;stroke-width:1.67221">WEBSHOP</tspan></text>
+    </g>
+    <rect
+       style="fill:#fc0100;fill-opacity:1;stroke-width:0.770391"
+       id="rect31696"
+       width="636.24036"
+       height="17.658651"
+       x="964.51733"
+       y="1372.403"
+       ry="8.8293257" />
+  </g>
+</svg>
