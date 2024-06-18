@@ -6,8 +6,8 @@ Route::get('/', function () {
     return response()->json(
         [
             'name' => 'Api Simple Webshop',
-            'mode' => 'dev',
-            'from' =>' Diego Ferreira',
+            'mode' => 'devlopment',
+            'from' => 'Diego Ferreira',
             'to' => 'Iete Technical Test'
         ]
     );

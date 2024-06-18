@@ -8,7 +8,6 @@ use App\Models\Cart;
 use Illuminate\Foundation\Exceptions\Renderer\Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use PhpParser\Node\Stmt\TryCatch;
 
 class CartController extends Controller
 {
@@ -39,28 +38,25 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
-        DB::beginTransaction();
 
         try{
-
-           $cart = Cart::create([
+            $cart = Cart::create([
                 'user_id' => $request->user_id,
             ]);
-
+        
             DB::commit();
 
-            return response() -> json(
+            return response()->json(
                 [
                 'message' => 'cadastrado com sucesso!',
                 'cart' => $cart,
                 ], 200);
 
-
-        }catch(Exception $e){
+        }catch(Exception){
             
             DB::rollBack();
 
-            return response() -> json(
+            return response()->json(
                 [
                     'message' => 'Error',
                 ], 400);

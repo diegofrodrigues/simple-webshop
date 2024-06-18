@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
+use App\Models\Cart;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -14,14 +15,17 @@ class LoginController extends Controller
     public function login(Request $request): JsonResponse
     {
         if(Auth::attempt(['email' => $request->email, 'password' => $request->password])){
-            $user = Auth::user();
 
-            $token = $request->user()->createToken('api-token')->plainTextToken;
+            $user = Auth::user();
+            $token = $request->user()->createToken('user-token')->plainTextToken;
+            $cart = Cart::create([
+                'user_id' => $user['id'],
+             ]);
 
             return response()->json([
                 'status' => true,
-                'user' => $user,
                 'token'=> $token,
+                'cart'=> $cart['id'],
             ], 201);
 
         }else{
@@ -52,20 +56,21 @@ class LoginController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request;
-
         $user = User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'password' => bcrypt($request['password']),
         ]);
 
-        $token = $user->user()->createToken('api-token')->plainTextToken;
+         $token = $user->createToken('api-token')->plainTextToken;
+         $cart = Cart::create([
+            'user_id' => $user['id'],
+         ]);
 
         return response()->json([
             'status' => true,
-            'user' => $user,
             'token'=> $token,
+            'cart'=> $cart['id'],
         ], 201);
     }
 

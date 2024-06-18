@@ -1,20 +1,22 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import Context from '../context/Context';
+import getProducts from "../api/getProducts";
 
 function SearchBar() {
 
   const {search, setSearch, products, setProducts} = useContext(Context);
  
   const productsFiltred = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     search.length > 0
-    ? setProducts(products.filter(product => product.name.includes(search))) : [];
-    };
+    ? setProducts(products.filter(product => product.name.includes(search))) 
+    : getProducts().then((res) => setProducts(res));
+  };
 
   return(
     <div className="dark:bg-gray-900">
       <form className=" max-w-lg mx-auto py-4 px-2"
-      onSubmit={productsFiltred}
+        onSubmit={productsFiltred}
       >
         <div className="flex">
           <div className="relative w-full">
@@ -23,7 +25,6 @@ function SearchBar() {
               value={search}
               type="search" 
               placeholder="Pesquisar..." 
-              required 
             />
             <button type="submit" className="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-red-700 rounded-e-lg border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
                 <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">

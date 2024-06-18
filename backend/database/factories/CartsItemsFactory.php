@@ -21,6 +21,7 @@ class CartsItemsFactory extends Factory
         return [
             'cart_id' => Cart::all()->random()->id,
             'product_id' => Product::all()->random()->id,
+            'quantity' => random_int(1,10),
         ];
     }
 }

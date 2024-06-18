@@ -25,7 +25,7 @@ function Products() {
       setCartItems([...cartItems, { ...product, quantity: 1 }]);
     }
   };
-
+  
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
@@ -39,8 +39,10 @@ function Products() {
 
   useEffect(() => {
     getProducts().then((res) => {
-      setProducts(res);
-      setLoading(false);
+      setTimeout(() => {
+        setProducts(res);
+        setLoading(false);
+      }, 2000);
     });
   }, []);
  

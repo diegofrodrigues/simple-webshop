@@ -1,18 +1,21 @@
-import { Routes, Route } from "react-router-dom";
-import Home from './pages/Home'
-import Login from './components/Login'
-import Register from './components/Register'
-import Checkout from "./pages/Checkout";
+import React from "react";
+import Footer from './components/Footer'
+import Header from './components/Header'
+import SearchBar from './components/SearchBar'
+import Products from './components/Products'
+import Cart from './components/Cart'
+import Provider from './context/Provider'
 
 function App() {
 
   return (
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/login" element={<Login />}></Route>
-      <Route path="/register" element={<Register />}></Route>
-      <Route path="/checkout" element={<Checkout />}></Route>
-    </Routes>
+    <Provider>
+      <Header/>
+      <SearchBar/>
+      <Cart/>
+      <Products/>
+      <Footer/>
+    </Provider>
   )
 }
 
