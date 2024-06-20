@@ -2,7 +2,7 @@
 
 This project was created for technical testing at Eité, the project consists of a simple website with product page and frontend cart built in Reactjs and API backend built in Laravel.
 
-## install
+## Download or clone the project
 
 ```
 git clone
