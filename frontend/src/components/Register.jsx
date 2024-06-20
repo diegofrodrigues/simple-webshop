@@ -27,18 +27,6 @@ function Register() {
     }
   };
 
-  // useEffect(() => {
-  //   localStorage.setItem("userInfos", JSON.stringify(userInfos));
-  // }, [userInfos]);
-
-  // useEffect(() => {
-  //   const userInfos = localStorage.getItem("userInfos");
-  //   if (userInfos) {
-  //     setUserInfos(JSON.parse(userInfos));
-  //   }
-  // }, []);
-
-
   return(
     <>
       <section className="bg-gray-50 dark:bg-gray-900">

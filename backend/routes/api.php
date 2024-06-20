@@ -18,8 +18,8 @@ Route::post('/v1/login', action:[LoginController::class, 'login']);
 Route::post('/v1/register', action:[LoginController::class, 'store']);
 
 Route::group(['middleware' => ['auth:sanctum']], function(){
-    Route::post('/v1/checkout', action:[CartsItemsController::class, 'store']);
-    Route::get('/v1/carts', action:[CartController::class, 'index']);
     Route::post('/v1/carts', action:[CartController::class, 'store']);
+    Route::post('/v1/checkout', action:[CartsItemsController::class, 'store']);
+    Route::post('/v1/logout', action:[LoginController::class, 'logout']);
 });
 

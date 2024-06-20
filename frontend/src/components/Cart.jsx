@@ -1,14 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import propTypes from 'prop-types';
 import Context from "../context/Context";
 import CartItem from "./CartItem";
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 import checkout from "../api/checkout";
+import getNewCart from "../api/getNewCart";
 
 function Cart() {
 
-  const {cartItems, setCartItems, showModal, setShowModal, showSignIn, setShowSignIn, showSignUp} = useContext(Context)
+  const {userInfo, cartItems, setCartItems, showModal, setShowModal, showSignIn, setShowSignIn, showSignUp} = useContext(Context)
 
   const getCartTotal = () => {
     return cartItems.reduce((total, product) => total + product.price * product.quantity, 0);
@@ -17,21 +18,29 @@ function Cart() {
   const clearCart = () => {
     setCartItems([]);
   };
+  
+  const isLogged = () => {
+    if (userInfo.length > 0){
+      return true
+    }else{
+        return false;
+    } 
+  }
 
   const processCheckout = () => {
-    
-    const user = JSON.parse(localStorage.getItem('userInfos')) || []
-    user.token ? 
+    const user = JSON.parse(localStorage.userInfo)
+    isLogged() ? (
       cartItems.forEach(item => {
-        item.cart = user.cart;
-        const token = "Bearer " + user.token;
+        item.cart = user[0].cart;
+        const token = user[0].token;
         const itemData = JSON.stringify(item);
         checkout(token, itemData,);
-        clearCart()
-        setShowModal(false)
-        }) 
-        : setShowSignIn(true);
-    }
+        clearCart();
+        setShowModal(false);
+        }),
+        getNewCart(user[0].token, user[0].cart)
+    ) : setShowSignIn(true);
+  }
 
   return(
     <>
@@ -75,24 +84,18 @@ function Cart() {
                             </dd>
                           </dl>
                         </div>
-                        <button
-                            type="button" 
-                            className="flex w-full items-center justify-center rounded-lg bg-slate-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-slate-300 dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800"
-                            onClick={() => processCheckout()}
-                            >teste
-                          </button>
                           <button
                             type="button" 
                             className="flex w-full items-center justify-center rounded-lg bg-slate-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-slate-300 dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800"
-                            onClick={() => setShowSignIn(true)}
+                            onClick={() => processCheckout()}
                             >Processar Compra
                           </button>
-                        <button 
-                          type="button" 
-                          className="flex w-full items-center justify-center rounded-lg bg-red-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
-                          onClick={()=>{clearCart()}}
-                          >Limpar Carrinho
-                        </button>
+                          <button 
+                            type="button" 
+                            className="flex w-full items-center justify-center rounded-lg bg-red-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
+                            onClick={() => clearCart()}
+                            >Limpar Carrinho
+                          </button>
                       </div>
                     </div>
                   </div>

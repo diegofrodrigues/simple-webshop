@@ -12,7 +12,7 @@ function Provider({children}) {
   const [showSignIn, setShowSignIn] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
   const [cartItems, setCartItems] = useState(localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [])
-  // const [userInfos, setUserInfos] = useState(localStorage.getItem('userInfos') ? JSON.parse(localStorage.getItem('userInfos')) : [])
+  const [userInfo, setUserInfo] = useState(localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : [])
   
   const values = {
     products,
@@ -29,8 +29,8 @@ function Provider({children}) {
     setShowSignIn,
     showSignUp, 
     setShowSignUp,
-    // userInfos,
-    // setUserInfos,
+    userInfo,
+    setUserInfo,
   };
 
   return(

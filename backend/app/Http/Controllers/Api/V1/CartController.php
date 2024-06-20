@@ -11,45 +11,22 @@ use Illuminate\Support\Facades\DB;
 
 class CartController extends Controller
 {
-    // public readonly Cart $cart;
-    // public function __construct() {
-
-    //     $this->cart = new Cart();
-    // }
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        return CartResource::collection(resource:Cart::with(relations:'user')->get());
-        
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
 
         try{
+            $oldcart = Cart::find($request->cart);
+
             $cart = Cart::create([
-                'user_id' => $request->user_id,
+                'user_id' => $oldcart->user_id,
             ]);
-        
+
             DB::commit();
 
             return response()->json(
                 [
                 'message' => 'cadastrado com sucesso!',
-                'cart' => $cart,
+                'cart' => $cart->id,
                 ], 200);
 
         }catch(Exception){
@@ -63,35 +40,4 @@ class CartController extends Controller
         }
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
 }
