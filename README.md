@@ -1,8 +1,8 @@
 # Simple Webshop
 
-This project was created for technical testing at Etec, the project consists of a simple website with product page and frontend cart built in Reactjs and API backend built in Laravel.
+This project was created for technical testing at Eité, the project consists of a simple website with product page and frontend cart built in Reactjs and API backend built in Laravel.
 
-## instaall
+## install
 
 ```
 git clone
